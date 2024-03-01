@@ -29,8 +29,9 @@ defmodule FooEcto.MixProject do
   end
 
   defp foo() do
-    case System.get_env("FOO_DEP") do
+    case System.get_env("FOO_DEV_DEP") do
       "LOCAL" -> {:foo, path: "../foo"}
+      "HEX" -> {:foo, "~> 0.1"}
       _ -> {:foo, git: "https://github.com/rmoorman/elixir-monorepo-test.git", sparse: "package/foo"}
     end
   end
