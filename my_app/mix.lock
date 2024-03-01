@@ -1,0 +1,3 @@
+%{
+  "foo_ecto": {:git, "https://github.com/rmoorman/elixir-monorepo-test.git", "08f63419134c43e6f401af06165b28341c2f7a61", [sparse: "package/foo_ecto"]},
+}
